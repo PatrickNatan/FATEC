@@ -3,12 +3,11 @@ Professor: Ciscato
 
 Este projeto consiste em desenvolver um programa chamado **FORMARQ**, cujo objetivo é converter tipos de arquivo, isto é, um arquivo é lido, e é gerado um segundo arquivo, cujo conteúdo é função do conteúdo do primeiro, mas em outro formato. O **FORMARQ** deverá dar suporte a 3 tipos de conversão:
 
-Exercícios das disciplinas do curso de Analise e Desenvolvimento de sistemas.
-Tipo|Nome        |Descrição
-:--:|----------- |--
-1   | Invert     |**CN** = ~CV (Caracter novo é o **complemento de um** do caracter velho)
-2   | Cript      |O usuário fornece uma palavra para funcionar como chave, isto é, o código ASCII de cada caracter da chave é máscara para uma operação XOR (ou exclusivo) com o byte lido do arquivo lido. Por exemplo:<br/>                       <br/>Conteúdo do arquivo de entrada: **BOM DIA, PESSOAL.**<br/>Chave: **GAVETA.**<br/>Arquivo de saída:Arquivo de saída:́<br/>´B´ ^ ´G´,<br/>´O´ ^ ´A´,<br/>´M´ ^ ´V´,<br/>´  ´ ^ ´E´,<br/>´D´ ^ ´T´,<br/>´I´ ^ ´A´,<br/>´A´ ^ ´G´, (volta ao 1º caracter da chave)<br/>´, ´ ^ ´A´,<br/>´  ´ ^ ´V´,<br/>´P´ ^ ´E´,<br/>´E´ ^ ´T´,<br/>´S´ ^ ´A´,<br/>´S´ ^ ´G´,<br/>´O´ ^ ´A´,<br/>´A´ ^ ´V´,<br/>´L´ ^ ´E´<br/>´. ´ ^ ´T´.<br/><br/>O caminho de volta é simples: o usuário fornece a chave e as mesmas operações serão feitas, fazendo com que o arquivo original seja recuperado.
-3   | Unix To DOS|Arquivos texto no DOS, o ‘\n’ é representado pelo par de caracteres CR/LF,isto é, 0x0D seguido por 0x0A, enquanto que no UNIX, basta o caracter LF, isto é, 0x0A. Neste modo, os arquivos texto para UNIX deverão ser convertidos para o padrão DOS, ou seja, sempre que for lido um 0x0A, inserir antes um 0x0D. Pode-se desejar também a conversão oposta, isto é, de DOS para UNIX.
+| Tipo        | Nome           | Descrição  |
+| ------------- |:-------------:| -----|
+| 1 |Invert |**CN** = ~CV (Caracter novo é o **complemento de um** do caracter velho)|
+| 2 | Cript       |   O usuário fornece uma palavra para funcionar como chave, isto é, o código ASCII de cada caracter da chave é máscara para uma operação XOR (ou exclusivo) com o byte lido do arquivo lido. Por exemplo:<br/>                       <br/>Conteúdo do arquivo de entrada: **BOM DIA, PESSOAL.**<br/>Chave: **GAVETA.**<br/>Arquivo de saída:Arquivo de saída:́<br/>´B´ ^ ´G´,<br/>´O´ ^ ´A´,<br/>´M´ ^ ´V´,<br/>´  ´ ^ ´E´,<br/>´D´ ^ ´T´,<br/>´I´ ^ ´A´,<br/>´A´ ^ ´G´, (volta ao 1º caracter da chave)<br/>´, ´ ^ ´A´,<br/>´  ´ ^ ´V´,<br/>´P´ ^ ´E´,<br/>´E´ ^ ´T´,<br/>´S´ ^ ´A´,<br/>´S´ ^ ´G´,<br/>´O´ ^ ´A´,<br/>´A´ ^ ´V´,<br/>´L´ ^ ´E´<br/>´. ´ ^ ´T´.<br/><br/>O caminho de volta é simples: o usuário fornece a chave e as mesmas operações serão feitas, fazendo com que o arquivo original seja recuperado. |
+| 3 | Unix To DOS     | Arquivos texto no DOS, o ‘\n’ é representado pelo par de caracteres CR/LF,isto é, 0x0D seguido por 0x0A, enquanto que no UNIX, basta o caracter LF, isto é, 0x0A. Neste modo, os arquivos texto para UNIX deverão ser convertidos para o padrão DOS, ou seja, sempre que for lido um 0x0A, inserir antes um 0x0D. Pode-se desejar também a conversão oposta, isto é, de DOS para UNIX. | 
 
 O **FORMARQ** deve ser chamado pela linha de comando pela seguinte sintaxe:
 
