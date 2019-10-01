@@ -18,9 +18,11 @@ FORMARQ <nome_do_arquivo> [I][C][D][U] [*chave*]
 		U:	Arquivo texto DOS, gerar arquivo texto UNIX.
 
 **Conversão Invert:**
+
 É um tipo de conversão que se for feita duas vezes, o arquivo volta à forma original. Assim, adotaremos o seguinte critério: o arquivo resultante da 1a conversão deverá ter como extensão “.INV”. Se for invertido o arquivo “dados.dat”, deverá ser gerado o arquivo “dados.inv”. Se for invertido o arquivo “dados.inv”, será gerado o arquivo “dados.dnv”, igual ao original (“.DNV” é a extensão do arquivo “desinvertido”).
 
 **Conversão Cript:**
+
  Deve gerar um arquivo com extensão “.CRP”. O caminho inverso pode ser feito: criptografar o criptografado com a mesma chave. 
  
  Ex.: foi criptografado o arquivo “dados.dat”, gerando assim o arquivo “dados.crp”. Para descriptografar, vamos criptografar novamente”dados.crp” com a mesma chave, gerando assim o arquivo “dados.drp”. (“.DRP” é a extensão do arquivo “descriptografado”). 
@@ -28,6 +30,7 @@ FORMARQ <nome_do_arquivo> [I][C][D][U] [*chave*]
  Obs.: a chave é como uma senha para o usuário.
 
 **Unix To Dos:**
+
 Seja qual for a extensão do arquivo texto para UNIX,, o arquivo para DOS deverá ter como extensão “.DOS”. Ao se fazer o processo inverso, o arquivo para UNIX deverá ter a extensão “.UNX”. 
 
 Todas essas características devem ser checadas antes de proceder qualquer conversão, e sempre que for constatada qualquer anormalidade, o programa FORMARQ deve ser cancelado, notificando o usuário com mensagens. Ex.: o arquivo de entrada não existe.
