@@ -10,8 +10,9 @@ Este projeto consiste em desenvolver um programa chamado **FORMARQ**, cujo objet
 | 3 | Unix To DOS     | Arquivos texto no DOS, o ‘\n’ é representado pelo par de caracteres CR/LF,isto é, 0x0D seguido por 0x0A, enquanto que no UNIX, basta o caracter LF, isto é, 0x0A. Neste modo, os arquivos texto para UNIX deverão ser convertidos para o padrão DOS, ou seja, sempre que for lido um 0x0A, inserir antes um 0x0D. Pode-se desejar também a conversão oposta, isto é, de DOS para UNIX. | 
 
 O **FORMARQ** deve ser chamado pela linha de comando pela seguinte sintaxe:
-
+```
 FORMARQ <nome_do_arquivo> [I][C][D][U] [*chave*]
+```
 		I:	O tipo de conversão deve ser o Invert.
 		C:	O tipo de conversão deve ser o Cript.
 		D:	Arquivo texto UNIX, gerar arquivo texto DOS.
@@ -36,7 +37,7 @@ Seja qual for a extensão do arquivo texto para UNIX,, o arquivo para DOS dever�
 Todas essas características devem ser checadas antes de proceder qualquer conversão, e sempre que for constatada qualquer anormalidade, o programa FORMARQ deve ser cancelado, notificando o usuário com mensagens. Ex.: o arquivo de entrada não existe.
 
  O usuário deve escolher um único tipo de conversão, caso contrário, cancelar o programa, notificando o usuário com mensagens. Além disso, o tipo de conversão escolhido deve estar entre os citados. Ex.: 
-
- **FORMARQ** dados.dat **G**
-
+```C
+ FORMARQ dados.dat G
+```
  O tipo de conversão G não existe, portanto, o programa deve ser cancelado.
