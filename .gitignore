@@ -1,1 +1,5 @@
-e -i HEAD~3wq
+*.ppx
+*.ppj
+*.tag
+*.exe
+*/output/
